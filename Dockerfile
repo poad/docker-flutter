@@ -1,4 +1,4 @@
-ARG FLUTTER_VERSION="1.22.6"
+ARG FLUTTER_VERSION="2.2.3"
 
 FROM buildpack-deps:buster-curl
 
