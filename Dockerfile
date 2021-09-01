@@ -7,7 +7,7 @@ LABEL maintainer="Kenji Saito<ken-yo@mbr.nifty.com>"
 ARG FLUTTER_VERSION
 
 RUN TEMP_DIR=$(mktemp -d) \
- && curl -sSLo ${TEMP_DIR}/flutter_linux_${FLUTTER_VERSION}_stable.tar.xz https://storage.googleapis.com/flutter_infra/releases/stable/linux/flutter_linux_${FLUTTER_VERSION}-stable.tar.xz \
+ && curl -sSLo ${TEMP_DIR}/flutter_linux_${FLUTTER_VERSION}_stable.tar.xz https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_${FLUTTER_VERSION}-stable.tar.xz \
  && apt-get update -qq \
  && apt-get install -qqy --no-install-recommends \
      software-properties-common \
